@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name '*.gif' -exec file --mime-type {} \; | grep 'image/gif' | cut -d: -f1 | rev | cut -d. -f2- | rev | sort -n -f
+find . -empty | rev | cut -d '/' -f 1 | rev
